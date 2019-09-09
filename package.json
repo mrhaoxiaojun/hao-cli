@@ -1,6 +1,6 @@
 {
   "name": "hao-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "hao-cli",
   "main": "index.js",
   "scripts": {
@@ -8,8 +8,14 @@
     "start": "node ./index.js"
   },
   "keywords": [
-    "hao-cli"
+    "hao-cli",
+    "cli",
+    "vue-cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrhaoxiaojun/hao-cli.git"
+  },
   "bin": {
     "hao": "./index.js",
     "hao-cli": "./index.js"
