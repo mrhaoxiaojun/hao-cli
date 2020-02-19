@@ -12,6 +12,8 @@ npm install hao-cli -g
 ### 使用
 
  ![cli-test](./cli-test.png)
+ 
+如果对您有帮助，欢迎start，有问题，欢迎issues
 
 ### 参考
 

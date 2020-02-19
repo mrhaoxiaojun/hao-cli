@@ -1,6 +1,6 @@
 {
   "name": "hao-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "hao-cli",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,7 @@
   },
   "keywords": [
     "hao-cli",
-    "cli",
-    "vue-cli"
+    "cli"
   ],
   "repository": {
     "type": "git",

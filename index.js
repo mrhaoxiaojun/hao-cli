@@ -4,7 +4,7 @@ const program = require('commander'); // node.js命令行界面的完整解决�
 const shell = require('shelljs'); // Nodejs使用ShellJS操作目录文件
 const chalk = require('chalk'); // 添加背景色
 const inquirer = require('inquirer'); //一个用户与命令行交互的工具
-const clone = require('./lib/clone'); //
+const clone = require('./lib/clone'); 
 const pkg = require('./package');
 
 program
@@ -33,8 +33,11 @@ program
         default: 'ui   - Vue 2.0 基于cli2x UI组件库',
         choices: [
           'ui          - Vue 2.0 基于cli2x UI组件库',
+          'v2Cli2m     - Vue 2.0 基于cli2x m端最佳实践',
           'v2Cli2pc    - Vue 2.0 基于cli2x pc端最佳实践',
+          'v2Cli3m     - Vue 2.0 基于cli3x m端最佳实践',
           'v2Cli3pc    - Vue 2.0 基于cli3x pc端最佳实践',
+          'gulp-multipage    - gulp 基于gulp pc&m端多页应用最佳实践',
         ],
       }).then((res) => {
         const type = res.type.split(' ')[0];
@@ -70,7 +73,7 @@ program
               console.log('');
               console.log(chalk.blue(`    $ cd ${project}`));
               console.log(chalk.blue(`    $ npm install`));
-              console.log(chalk.blue(`    $ npm dev`));
+              console.log(chalk.blue(`    $ ....`));
               console.log('');
             },
             fail(err) {
@@ -107,7 +110,10 @@ program.parse(process.argv);
 function listTemplateToConsole() {
   console.log('');
   console.log(chalk.green('  ui        - Vue 2.0 基于cli2x UI组件库'));
+  console.log(chalk.green('  v2Cli2m   - Vue 2.0 基于cli2x m端最佳实践'));
   console.log(chalk.green('  v2Cli2pc  - Vue 2.0 基于cli2x pc端最佳实践'));
+  console.log(chalk.green('  v2Cli3m   - Vue 2.0 基于cli3x m端最佳实践'));
   console.log(chalk.green('  v2Cli3pc  - Vue 2.0 基于cli3x pc端最佳实践'));
+  console.log(chalk.green('  gulp-multipage  - gulp 基于gulp pc&m端多页应用最佳实践'));
   console.log('');
 }
