@@ -37,6 +37,7 @@ program
           'v2Cli2pc    - Vue 2.0 基于cli2x pc端最佳实践',
           'v2Cli3m     - Vue 2.0 基于cli3x m端最佳实践',
           'v2Cli3pc    - Vue 2.0 基于cli3x pc端最佳实践',
+          'v2Cli4pc    - Vue 2.0 基于cli4x pc端最佳实践',
           'gulp-multipage    - gulp 基于gulp pc&m端多页应用最佳实践',
         ],
       }).then((res) => {
@@ -114,6 +115,7 @@ function listTemplateToConsole() {
   console.log(chalk.green('  v2Cli2pc  - Vue 2.0 基于cli2x pc端最佳实践'));
   console.log(chalk.green('  v2Cli3m   - Vue 2.0 基于cli3x m端最佳实践'));
   console.log(chalk.green('  v2Cli3pc  - Vue 2.0 基于cli3x pc端最佳实践'));
+  console.log(chalk.green('  v2Cli4pc  - Vue 2.0 基于cli4x pc端最佳实践'));
   console.log(chalk.green('  gulp-multipage  - gulp 基于gulp pc&m端多页应用最佳实践'));
   console.log('');
 }
